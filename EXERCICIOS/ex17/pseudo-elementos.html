@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elementos</title>
+    <style>
+        a {color: rgb(255, 0, 0); font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em; text-decoration: none; }
+        a:active{
+            background-color: rgb(0, 0, 0);color: rgb(0, 0, 0);
+        }
+        a:visited{
+            color: rgb(22, 5, 255);
+            
+        }
+        a:hover{ color: rgb(255, 0, 0);}
+        a::before{content:'♪'; color: black; font-size: larger;}
+        a::after{content: '♪'; color: black; font-size: larger;}
+        
+        
+        
+    </style>
+
+</head>
+<body>
+    
+    <ul>
+        <li><a href="https://youtu.be/7AlAYttGnAg">Fim de semana no Rio</a>
+        <li><a href="https://youtu.be/TKqa-ZXGKYA">Vampiro</a>
+        <li> <a href="https://youtu.be/qa2-wpVZt2E">Aulas e cursos</a>
+    </ul>
+    
+</body>
+</html>

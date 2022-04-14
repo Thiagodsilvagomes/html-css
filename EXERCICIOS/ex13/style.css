@@ -1,0 +1,20 @@
+
+body { background-color: rgba(255, 187, 0, 0.315);
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;}
+    h1{ font-size: large;
+        color: rgb(239, 255, 10);
+        background-color: black;
+
+    }
+    h2{color: rgb(239, 255, 10);
+        background-color: rgb(0, 0, 0);
+
+    }
+    p{
+        background-color: rgb(220, 255, 20);
+    
+    }
+    mark{ background-color: rgb(9, 255, 0);
+
+    }
