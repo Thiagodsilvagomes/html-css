@@ -5,22 +5,41 @@
     padding: 0px ;
 }
 
+@font-face{
+    font-family:'corpo';
+    src:url('../fontes/Cream\ Cake.otf')
+    
+}
+
+:root{
+    --font1:'titulo', 'cursive';
+    --font2:'corpo', 'cursive';
+}
+
+
 html, body{
     min-height:100vh;
     background-color: darkgray;
-    
+     
 }
 
 header{
     background-color: black;
     color: white;
     text-align: center;
+    
+    
+    
 }
 
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
     margin-bottom: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    font-size: 4em;
+   
 }
 
 header > p{
@@ -41,9 +60,16 @@ a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 1.5em;
     padding-left: 30px;
+    font-family:var(--font2);
+    font-size: 2em;
+    text-align:justify ;
+    
+}
 
+section > p{
+    padding-bottom:2em ;
 }
 
 section.normal{
@@ -54,9 +80,27 @@ section.normal{
 section.imagem{
     background-color: rgb(51, 51, 51);
     color: rgb(255, 255, 255);
+    box-shadow:inset 6px 6px 13px rgba(0, 0, 0, 0.76) ;
+    
 }
 
 section.imagem > p{
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.486)0, 0, 0, 0.521);
+    max-width:400px;
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.61);
+    text-shadow:1px 1px 0px black ;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position:right, center ;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+section#img02{
+    background-image:url('../imagens/background002.jpg') ;
+    background-position:right, center;
+    background-size:cover;
+    background-attachment: fixed;
 }
