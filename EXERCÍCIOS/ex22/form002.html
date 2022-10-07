@@ -8,5 +8,19 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
+    <form action="cadastro.js" method="POST" autocomplete="on">
+    <p>
+        <label for="iusu">Usuário</label>
+        <input type="text" name="usuario" id="iusu" required minlength="6" maxlength="20" placeholder="Nome do usuário" autocomplete="username">
+    </p>
+    <p>
+        <label for="isen">Senha</label>
+        <input type="password" name="usuario" id="isen" required minlength="6" maxlength="20" placeholder="Mínino 6 caracteres" autocomplete="current-password">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
 </body>
 </html>
